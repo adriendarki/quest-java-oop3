@@ -1,7 +1,7 @@
-public class Eagle extends Bird {
+public class Eagle extends Bird implements Fly {
 
-    private boolean flying;
-    private int altitude;
+    private final boolean flying;
+    private final int altitude;
 
     public Eagle(String name) {
         super(name);
@@ -20,5 +20,30 @@ public class Eagle extends Bird {
     @Override
     public String sing() {
         return "Screech!";
+    }
+
+    @Override
+    public void takeOff() {
+
+    }
+
+    @Override
+    public void ascend(int altitude) {
+
+    }
+
+    @Override
+    public void glide() {
+
+    }
+
+    @Override
+    public void descend(int altitude) {
+
+    }
+
+    @Override
+    public void land() {
+
     }
 }
