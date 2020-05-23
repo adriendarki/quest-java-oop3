@@ -1,5 +1,6 @@
 public class Eagle extends Bird implements Fly {
 
+
     private final boolean flying;
     private final int altitude;
 
